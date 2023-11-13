@@ -13,6 +13,26 @@ div{
   animation-iteration-count: infinite;
 }
 
+.adiv{
+  width: 800px;
+height: 800px;
+background-color: rgb(21, 255, 0);
+animation-name: example2;
+animation-duration: 0.00001s;
+position: relative;
+animation-iteration-count: infinite;
+}
+
+.bdiv{
+  width: 800px;
+height: 800px;
+background-color: rgb(21, 255, 0);
+animation-name: example1;
+animation-duration: 0.00001s;
+position: relative;
+animation-iteration-count: infinite;
+}
+
 @keyframes example{
     0%   {background-color:red; left:1px; top:10px;}
   25%  {background-color:yellow; left:400px; top:0px;}
@@ -21,3 +41,18 @@ div{
   100% {background-color:rgb(255, 0, 179); left:0px; top:0px;}
 }
 
+@keyframes example1{
+  0%   {background-color:red; left:1px; top:10px;}
+25%  {background-color:rgb(31, 31, 25); left:40px; top:0px;}
+50%  {background-color:blue; left:20px; top:200px;}
+75%  {background-color:rgb(159, 226, 159); left:800px; top:200px;}
+100% {background-color:rgb(255, 0, 179); left:0px; top:0px;}
+}
+
+@keyframes example2{
+  0%   {background-color:red; left:100px; top:10px;}
+25%  {background-color:yellow; left:600px; top:0px;}
+50%  {background-color:blue; left:900px; top:200px;}
+75%  {background-color:green; left:800px; top:500px;}
+100% {background-color:rgb(255, 0, 179); left:0px; top:0px;}
+}
